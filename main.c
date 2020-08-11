@@ -24,19 +24,16 @@ int main(){
     deleteNodo(4,l);
     imprimir(l);
 
-    /*Nodo* nodo = getNodo(2,l);
-
-    printf("El valor del nodo es : %i \n",nodo->val);
+    
 
     int valor =  getValor(1,l);
     if (valor != -1){
         printf("El valor en  buscado es: %i",valor);
     }else{
         printf("No se encontro el valor :C \n");
-    } */
+    } 
 
-    int val = getPosUltimo(l);  
-    printf("La posicion ultima es : %i",val);
+    
 
 
     return 0;
