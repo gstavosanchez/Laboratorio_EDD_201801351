@@ -16,7 +16,7 @@ int main(){
     add(l,d);
 
 
-
+    generar(l);
     
     imprimir(l);
 

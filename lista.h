@@ -15,3 +15,5 @@ int getValor(int posicion,Lista* l);
 Nodo* getNodo(int posicion,Lista* l);
 void deleteNodo(int posicion,Lista* l);
 int getPosUltimo(Lista* l);
+void generar(Lista* l);
+void guardarRecursivo(Nodo* aux,FILE *fp,char *c);

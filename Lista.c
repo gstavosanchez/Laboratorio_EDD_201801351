@@ -114,3 +114,39 @@ void deleteNodo(int posicion,Lista* l){
     }
 
 }
+
+void generar(Lista* l){
+    FILE *fp;
+    fp = fopen("./codigo.txt","w");
+    if(fp == NULL){
+        printf("Error");
+        return;
+    }
+    char cad[1024];
+    sprintf(cad,"digraph G{ \n node[shape=\"circle\",fontcolor=\"#832561\",color=\"#B965AE\"];\n");
+    fputs(cad,fp);
+    Nodo* aux;
+    aux= l->head;
+    guardarRecursivo(aux,fp,cad);
+    sprintf(cad,"}\n");
+    fputs(cad,fp);
+    fclose(fp);
+
+}
+
+void guardarRecursivo(Nodo* aux,FILE* fp,char c[]){
+    if(aux==NULL){
+        return;
+    }else{
+        if(aux->derecha!=NULL){
+            sprintf(c,"node%p[label=\"%i\"]\n",&(*aux),aux->val);
+            fputs(c,fp);
+            guardarRecursivo(aux->derecha,fp,c);
+            sprintf(c,"node%p->node%p[arrowhead=\"vee\",color=\"#832561\"];\n node%p->node%p[arrowhead=\"vee\",color=\"#832561\"];\n",&(*aux),&(*aux->derecha),&(*aux->derecha),&(*aux));
+            fputs(c,fp);
+        }else{
+            sprintf(c,"node%p[label=\"%i\"]\n",&(*aux),aux->val);
+            fputs(c,fp);
+        }
+    }
+}
