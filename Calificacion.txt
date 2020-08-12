@@ -1,0 +1,16 @@
+
+-------------------------Errores-------------------
+1) Me dio segmentation fault al mandarle 0 al metodo de eliminar
+
+2) El indice para el get inicia en 1
+
+-------------------------Recomendaciones-----------
+
+1) El indice normalmente inicia 0
+-------------------------Notas---------------------
+
+Grafica 20/20
+Eliminar 30/40
+Get 40/40
+
+

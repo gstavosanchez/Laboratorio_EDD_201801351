@@ -1,13 +1,13 @@
 digraph G{ 
  node[shape="circle",fontcolor="#832561",color="#B965AE"];
-node006C1498[label="3"]
-node006C1480[label="10"]
-node006C14B0[label="25"]
-node006C14C8[label="30"]
-node006C14B0->node006C14C8[arrowhead="vee",color="#832561"];
- node006C14C8->node006C14B0[arrowhead="vee",color="#832561"];
-node006C1480->node006C14B0[arrowhead="vee",color="#832561"];
- node006C14B0->node006C1480[arrowhead="vee",color="#832561"];
-node006C1498->node006C1480[arrowhead="vee",color="#832561"];
- node006C1480->node006C1498[arrowhead="vee",color="#832561"];
+node0x55dc2a259280[label="3"]
+node0x55dc2a259260[label="10"]
+node0x55dc2a2592a0[label="25"]
+node0x55dc2a2592c0[label="30"]
+node0x55dc2a2592a0->node0x55dc2a2592c0[arrowhead="vee",color="#832561"];
+ node0x55dc2a2592c0->node0x55dc2a2592a0[arrowhead="vee",color="#832561"];
+node0x55dc2a259260->node0x55dc2a2592a0[arrowhead="vee",color="#832561"];
+ node0x55dc2a2592a0->node0x55dc2a259260[arrowhead="vee",color="#832561"];
+node0x55dc2a259280->node0x55dc2a259260[arrowhead="vee",color="#832561"];
+ node0x55dc2a259260->node0x55dc2a259280[arrowhead="vee",color="#832561"];
 }

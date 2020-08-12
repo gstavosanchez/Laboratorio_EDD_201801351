@@ -21,18 +21,20 @@ int main(){
     imprimir(l);
 
     printf("------------------ \n");
-    deleteNodo(4,l);
+    deleteNodo(1,l);
+    deleteNodo(2,l);
+
     imprimir(l);
 
     
 
-    int valor =  getValor(1,l);
+    /*int valor =  getValor(1,l);
     if (valor != -1){
         printf("El valor en  buscado es: %i",valor);
     }else{
         printf("No se encontro el valor :C \n");
     } 
-
+*/
     
 
 
