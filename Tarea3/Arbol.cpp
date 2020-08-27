@@ -103,3 +103,44 @@ Nodo* Arbol::addIterativo(int elemento){
     }
     return nodo;
 }
+void Arbol::preOrden(Nodo* nodo){
+    cout<<nodo->getElemento()<<endl;
+
+    if(nodo->getIzquierda() != NULL){ //Significa que hay un nodo en la izquierda
+        this->preOrden(nodo->getIzquierda());
+    }
+
+    if(nodo->getDerecha() != NULL){ //Significa que hay un nodo en la derecha
+        this->preOrden(nodo->getDerecha());
+    }
+}
+
+void Arbol::inOrden(Nodo* nodo){
+    
+    
+    if(nodo->getIzquierda() != NULL){ //Significa que hay un nodo en la izquierda
+        this->inOrden(nodo->getIzquierda());
+    }
+
+    cout<<nodo->getElemento()<<endl;
+
+    if(nodo->getDerecha() != NULL){ //Significa que hay un nodo en la derecha
+        this->inOrden(nodo->getDerecha());
+    }
+}
+
+void Arbol::postOrden(Nodo* nodo){
+    
+    
+    if(nodo->getIzquierda() != NULL){ //Significa que hay un nodo en la izquierda
+        this->postOrden(nodo->getIzquierda());
+    }
+
+    
+
+    if(nodo->getDerecha() != NULL){ //Significa que hay un nodo en la derecha
+        this->postOrden(nodo->getDerecha());
+    }
+
+    cout<<nodo->getElemento()<<endl;
+}

@@ -20,6 +20,9 @@ public:
     bool isInternal(Nodo *); // Es un nodo intermedio
     Nodo* addRecursivo(Nodo *,int);
     Nodo* addIterativo(int);
+    void preOrden(Nodo *);
+    void inOrden(Nodo *);
+    void postOrden(Nodo *);
 
 };
 
