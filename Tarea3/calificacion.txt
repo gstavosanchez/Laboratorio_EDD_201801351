@@ -1,0 +1,12 @@
+---------------Errores--------------
+1) No tiene delete, por lo que queda en memoria
+2)
+---------------Recomendaciones------
+
+---------------Nota-----------------
+Arbol     20/40
+Preorden  20/20
+Inorden   20/20
+Postorden 20/20
+
+
